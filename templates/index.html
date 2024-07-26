@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak with Marvin</title>
+    <style>
+        #ollamaOutput {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>Say something to Marvin</h1>
+    <button id="startButton">Start Recording</button>
+    <button id="stopButton" disabled>Stop Recording</button>
+    <p id="speechOutput"></p>
+    <h2>Ollama Response:</h2>
+    <pre id="ollamaOutput"></pre>
+    <div>
+        <h3>TTS Controls:</h3>
+        <button id="pauseButton">Pause TTS</button>
+        <button id="resumeButton">Resume TTS</button>
+        <button id="cancelButton">Stop TTS</button>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
